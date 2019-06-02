@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Relevant Charts and Figures - 2017 Pension Data</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/simplex.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 41px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h2 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h3 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h4 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h5 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.section h6 {
+  padding-top: 46px;
+  margin-top: -46px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Pension Fund Liability Map</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">FAQ</a>
+</li>
+<li>
+  <a href="charts.html">Relevant Charts and Figures - 2017 Pension Data</a>
+</li>
+<li>
+  <a href="about.html">Resources</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Relevant Charts and Figures - 2017 Pension Data</h1>
+
+</div>
+
+
+<center>
+<p><strong>Figures 1 &amp; 2: Funding Ratios by State</strong></p>
+</center>
+<center>
+<img src="Figures%201&amp;2.png" />
+</center>
+<p>Figure 1 shows these funding ratios for the twenty-five states with the lowest percentages in 2016, while Figure 2 shows the twenty-five states with the highest. These statistics are for state-sponsored funds only. Market-valuation funding ratios vary widely and run from a minimum of just 29.5% in South Carolina to a maximum of 70% in South Dakota. The difference in stated funding ratios and those calculated using the risk-neutral market value approach is also often significant. For example, South Dakota’s stated funding ratio is 100%, leading one to believe that it is completley funded. However, its market value funding ratio is only 69.6%.</p>
+<center>
+<p><strong>Figure 3: Multiple of Estimated Tax Revenues</strong></p>
+</center>
+<center>
+<img src="Figure%203.png" />
+</center>
+<center>
+<p><strong>Figure 4: Multiple of Estimated Total Own State Revenues</strong></p>
+</center>
+<center>
+<p><img src="Figure%204.png" /></p>
+</center>
+<p>Figure 3 examines unfunded liabilities as multiples of estimated tax revenue at both the state and local levels. On the left side of the figure, the first graph includes all fifty states ranked by the multiples of state-only tax revenue. On the right side of the figure, the second graph also includes all fifty states; however, here they are ranked by the multiples of state and local tax revenue. Figure 4 utilizes the same bifurcation between graphs; however, instead of having the multiples estimated based upon total tax revenues, the multiples are estimated using total own state-only revenues and total own revenues on the state and local levels. Multiples of tax revenues in both graphs range extensively. For example, when focusing on the multiples of state-only tax revenue, Alaska’s is over seventeen while Vermont’s multiple is just over one. While Alaska’s extreme multiple is in part caused by the effect that petroleum price shocks had on the state’s revenue, high multiples are seen in other states as well. Illinois and South Carolina, with the second and third highest multiples respectively, both have unfunded liabilities over seven times their estimated state-only tax revenues.</p>
+<center>
+<p><strong>Figures 5 &amp; 6: Percentage of State Revenues Contributed</strong></p>
+</center>
+<center>
+<img src="Figures%205&amp;6.png" />
+</center>
+<p>The next analysis examines the flow, or “pension deficit”—how much new unfunded liabilities are accrued each year under the different measurement techniques. Figures 5 and 6 show the share of own revenue actually contributed to pension systems in each state, as well as the share required to be contributed to avoid an increase in the unfunded liability. Figure 5 shows the twenty-five states with highest required shares while Figure 6 shows the twentyfive states with the lowest.</p>
+<p>These figures illustrate large differences between the amounts actually contributed and the amounts necessary to contribute to avoid rises in unfunded liabilities. In many states, GASB NPL increases even under the assumption of expected return—that is, the bottom bar is larger than the top bar. In all states except Michigan, the contributions required to keep the UMVL from increasing outstrip those actually made, and in many cases substantially so.</p>
+<p>In other states, one sees even more troubling statistics. For example, in Nevada contributions were 10.8% of own revenue in 2016. Even if Nevada had reached its assumed rate of return, the state would have had to contribute 13.9% of own revenue in order to prevent a rise in the NPL. Under the MVL approach, the pension budget would be balanced (in the sense of non-increasing debt) if Nevada had contributed 22.9% of own revenue, well over twice of what it actually contributed. None of these calculations include any amounts to pay down unfunded liabilities.</p>
+<p>States for which the pension deficit under the UMVL measure is close to the pension deficit under the expected return measure are generally those for which the present value of newly accrued benefits is relatively small compared to the size of the interest cost, which is a function of the unfunded liability. These states fall into two categories. First, there are states that have undertaken pension reforms, which typically slow the rate of future growth rather than reduce accrued liabilities. Second, there are states where interest costs are high relative to service costs because of the large extent of unfunded liabilities.</p>
+<p>For example, Rhode Island requires 7.4% of own revenue under the expected return measure but 9.3% of own revenue under the MVL measure, a relatively small difference. This is because Rhode Island undertook a major pension reform in 2011 that reduced benefit accruals substantially by introducing a hybrid element to its pension system. For service beyond that date, employees’ pensions would grow at a slower rate; in addition, they receive contributions to a defined contribution plan. As a result, service costs for Rhode Island are small relative to interest costs.</p>
+<p>Connecticut and Louisiana also show a relatively small difference between the pension deficit measures, but this rather reflects the fact that the pension systems in these states have very poor funding ratios. The return on assets in these states therefore has a less important impact because there are comparatively few assets to begin with.</p>
+<center>
+<p><strong>Figures 7 &amp; 8: Stated and Market Value City Funding Ratios</strong></p>
+</center>
+<center>
+<img src="Figures%207&amp;8.png" />
+</center>
+<p>Figure 7 shows the twenty cities with the lowest funding ratios in 2015, while Figure 8 shows the twenty cities with the highest ratios. Similarly to the states’ ratios, cities’ MVL funding ratios vary widely, from just 22.9% in Chicago to a maximum of 74.5% in Fresno, California. Large differences in stated and market value are again prevalent as well. For example, Fresno’s stated funding ratio is 112%.</p>
+<center>
+<p><strong>Figure 9: Pension Debt as a Multiple of Own Revenue and Tax Revenue</strong></p>
+</center>
+<center>
+<p><img src="Figure%209.png" /></p>
+</center>
+<p>Figure 9 shows the pension debt (NPL and UMVL) as a multiple of own revenue and tax revenue, in descending order of the latter. Among top-forty US cities by population, Chicago’s pension liabilities were the largest multiple of 2015 revenue, at 13.6 times own source revenue and 25.2 times tax revenue. Milwaukee, Omaha, Los Angeles, and Orlando are the other cities in the top five according to UMVL as a share of total own revenue, surpassing multiples of 3.7. Milwaukee, Omaha, Los Angeles, and St. Paul are the other cities in the top five according to UMVL as a share of tax revenue, surpassing mutlipes of 8.0 times total tax revenue.</p>
+<center>
+<p><strong>Figure 10 &amp; 11: Percentage of City Revenues Contributed</strong></p>
+</center>
+<center>
+<p><img src="Figures%2010&amp;11.png" /></p>
+</center>
+<p>Figures 10 and 11 show the pension deficits. The City of Chicago contributed 33.2% of its own revenue to pensions in 2016; but to prevent a rise in the UMVL (that is, to run a balanced pension budget on a market-value accrual basis), it would have had to contribute a full 63.3% of its own revenue. Milwaukee, Omaha, Los Angeles, and San Francisco would all have had to contribute more than 25.3% of their budgets just to prevent the UMVL from rising.</p>
+<p>As was the case for states, cities that have undertaken pension reforms to slow the growth of new pension benefits show smaller differences between the pension deficit under the MVL and the pension deficit under the expected return measures, as service costs will be small relative to interest costs. One example is Philadelphia, which introduced a new hybrid plan and requires employees who do not elect to participate to contribute more to the plan. As a result, the city only needs to contribute 11.4% of own revenue to prevent increases in unfunded liabilities, despite the fact that its unfunded legacy liability is quite large.</p>
+<p>Another factor that generates differences in the extent to which the UMVL pension deficit exceeds the expected-return deficit is the choice of the expected return itself. Systems that already assume a lower rate will have less distance between the measures. Some examples include the Portland, Oregon, Fire &amp; Police Disability &amp; Retirement Fund and the legacy systems of the city of Indianapolis, which use discount rates that are not far from Treasury rates due to their very low funding ratios. However, since the Indianapolis systems have long been closed to new workers, the pension deficits for the city overall are small relative to the city’s resources.</p>
+<center>
+<p><strong>Figure 12: Funding Ratios by County</strong></p>
+</center>
+<center>
+<p><img src="Figure%2012.png" /></p>
+</center>
+<p>Figure 12 shows the twenty-five counties’ funding ratios, ranging from a minimum of 28.6% in Miami-Dade County, Florida, to a maximum of 77.2% in Harris County, Texas.</p>
+<center>
+<p><strong>Figure 13: Multiple of Estimated 2016 Total Own State Revenues</strong></p>
+</center>
+<center>
+<p><img src="Figure%2013.png" /></p>
+</center>
+<p>Figure 13 shows pension debt as a multiple of own revenue and tax revenue, in descending order of the latter. Los Angeles, California, had the largest multiple, at 55.03 times own source revenue and 108.3 times tax revenue. Orange County, California, San Diego, California, and Cook County, Illinois are the three counties with the next highest multiples, and all three surpass multiples of six times total own revenue and ten times total tax revenue.</p>
+<center>
+<p><strong>Figure 14: Percentage of County Revenues Contributed</strong></p>
+</center>
+<center>
+<p><img src="Figure%2014.png" /></p>
+</center>
+<p>Figure 14 shows the counties’ pension deficits. Orange County, California, contributed 34.9% of its own revenue to pensions in 2016, but under MVL it would have had to contribute 75.9% to prevent a rise in unfunded liability. Cook County, Illinois, and three counties in California—Sacramento, San Diego, and Kern—also would have had to contribute more than 40% of their own revenue budgets just to prevent the UMVL from rising.</p>
+<style type="text/css">
+<p>body{ /* Normal <em>/ font-family: Helvetica; font-size: 11px; } td { /</em> Table */ font-size: 8px; color: Gray; } h1.title { font-size: 20px; color: Teal; }</p>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
